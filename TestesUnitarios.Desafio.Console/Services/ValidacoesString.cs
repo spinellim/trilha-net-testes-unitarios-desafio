@@ -4,20 +4,17 @@ namespace TestesUnitarios.Desafio.Console.Services
     {
         public int RetornarQuantidadeCaracteres(string texto)
         {
-            var numeroCaracteres = texto.Length;
-            return numeroCaracteres;
+            return texto.Length;
         }
 
         public bool ContemCaractere(string texto, string textoProcurado)
         {
-            var contem = texto.Contains(textoProcurado);
-            return contem;
+            return texto.Contains(textoProcurado);
         }
 
         public bool TextoTerminaCom(string texto, string textoProcurado)
         {
-            var termina = texto.EndsWith(textoProcurado);
-            return termina;
+            return textoProcurado.EndsWith(texto);
         }
     }
 }
